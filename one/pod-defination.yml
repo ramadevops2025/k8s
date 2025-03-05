@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-nginx
+  labels:
+    name: myapp
+    type: front-end
+spec:
+  containers:
+  - name: ng-myapp
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+   
